@@ -35,8 +35,8 @@ public class ItemsDatabaseEditor : Editor
         
         itemsDatabase.items = itemDataList.ToArray();
         
-        EditorUtility.SetDirty(itemsDatabase);
-        
-        AssetDatabase.SaveAssets();
+         EditorUtility.SetDirty(itemsDatabase);
+        //
+        // AssetDatabase.SaveAssets();
     }
 }
