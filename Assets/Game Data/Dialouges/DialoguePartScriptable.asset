@@ -15,5 +15,5 @@ MonoBehaviour:
   text: Hello there year 3 B
   hasAudio: 1
   audioClip: {fileID: 0}
-  characterName: zoltan
+  characterName: geralt
   sprite: {fileID: 0}

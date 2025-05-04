@@ -8,7 +8,7 @@ public class DialoguePartEditor : Editor
     public SerializedProperty textProperty;
     public SerializedProperty hasAudioProperty;
     public SerializedProperty audioClipProperty;
-    public SerializedProperty CharacterNameProperty;
+    public SerializedProperty characterNameProperty;
     
     Texture2D characterTexture;
     
@@ -17,18 +17,22 @@ public class DialoguePartEditor : Editor
         textProperty = serializedObject.FindProperty("text");
         hasAudioProperty = serializedObject.FindProperty("hasAudio");
         audioClipProperty = serializedObject.FindProperty("audioClip");
-        CharacterNameProperty = serializedObject.FindProperty("characterName");
+        characterNameProperty = serializedObject.FindProperty("characterName");
     }
 
     public override void OnInspectorGUI()
     {
-        EditorGUILayout.PropertyField(CharacterNameProperty);
+        EditorGUILayout.PropertyField(characterNameProperty);
 
-        characterTexture = GetCharacterSpriteByName(CharacterNameProperty.stringValue);
+        characterTexture = GetCharacterSpriteByName(characterNameProperty.stringValue);
         if (characterTexture)
         {
             GUILayout.Box(characterTexture,
             GUILayout.Width(128), GUILayout.Height(128));
+        }
+        else
+        {
+            EditorGUILayout.HelpBox("No such character found", MessageType.Error);
         }
 
         EditorGUILayout.PropertyField(textProperty);

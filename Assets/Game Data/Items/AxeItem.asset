@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AxeItem
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 6f76c0512f382314f9085d9e108108ae, type: 3}
-  rarity: 1
+  rarity: 2

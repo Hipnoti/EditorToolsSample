@@ -31,7 +31,7 @@ public class ItemDataEditor : Editor
         
         GUIStyle boxStyle = new GUIStyle(GUI.skin.box)
         {
-            border = new RectOffset(15, 15, 15, 15), 
+            border = new RectOffset(50, 50, 50, 50), 
             normal = { background = Texture2D.whiteTexture }
         };
         
