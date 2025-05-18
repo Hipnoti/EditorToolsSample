@@ -6,8 +6,8 @@ public class FollowObjectEditMode : MonoBehaviour
 {
     [SerializeField] private Transform targetTransform;
     
-    // private void Update()
-    // {
-    //     transform.LookAt(targetTransform);
-    // }
+    private void Update()
+    {
+        transform.LookAt(targetTransform);
+    }
 }
