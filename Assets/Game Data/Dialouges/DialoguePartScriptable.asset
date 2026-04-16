@@ -17,3 +17,5 @@ MonoBehaviour:
   audioClip: {fileID: 0}
   characterName: geralt
   sprite: {fileID: 0}
+  hasAnimation: 0
+  animationClip: {fileID: 0}

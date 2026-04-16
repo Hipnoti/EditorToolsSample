@@ -10,4 +10,9 @@ public class DialoguePartScriptable : ScriptableObject
     
     public string characterName;
     public Texture2D sprite;
+    
+    public bool hasAnimation;
+    public AnimationClip animationClip;
+    
+    
 }
