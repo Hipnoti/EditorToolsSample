@@ -7,16 +7,15 @@ public class ItemsDatabase : ScriptableObject
 {
     public ItemData[] items;
 
-    [ContextMenu("Update Items Database")]
+    //[ContextMenu("Update Items Database")]
     public void UpdateItemsDatabase()
     {
-        string[] guids = AssetDatabase.FindAssets("t:ItemData");
+        GUID[] guids = AssetDatabase.FindAssetGUIDs("t:ItemData");
         List<ItemData> itemDataList = new List<ItemData>();
 
-        foreach (string guid in guids)
+        foreach (GUID guid in guids)
         {
-            string path = AssetDatabase.GUIDToAssetPath(guid);
-            ItemData itemData = AssetDatabase.LoadAssetAtPath<ItemData>(path);
+            ItemData itemData = AssetDatabase.LoadAssetByGUID<ItemData>(guid);
             if (itemData)
             {
                 itemDataList.Add(itemData);

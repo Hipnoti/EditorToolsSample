@@ -18,7 +18,7 @@ public class ItemsDatabaseEditor : Editor
     private void UpdateItemsDatabase()
     {
         ItemsDatabase itemsDatabase = (ItemsDatabase)target;
-
+ 
         itemsDatabase.UpdateItemsDatabase();
         //
         // AssetDatabase.SaveAssets();
