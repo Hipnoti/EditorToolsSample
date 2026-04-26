@@ -8,7 +8,7 @@ using System.Collections.Generic;
 [EditorToolbarElement(id: PrefabToolbarOverlayWithCustomIcons.ToolbarElementID)]
 public class PrefabToolbarOverlayWithCustomIcons : EditorToolbarDropdown
 {
-    public const string ToolbarElementID = "PrefabToolbarOverlayWithCustomIcons/PrefabsDropdown";
+    public const string ToolbarElementID = "PrefabsDropdown";
 
     private static List<GameObject> prefabs = new List<GameObject>();
     private static Dictionary<string, Texture2D> prefabIcons = new Dictionary<string, Texture2D>();
@@ -100,7 +100,7 @@ public class PrefabToolbarOverlayWithCustomIcons : EditorToolbarDropdown
     }
 }
 
-[Overlay(typeof(SceneView), "Prefab Toolbar Overlay with Custom Icons")]
+[Overlay(typeof(SceneView), "Prefab Toolbar Overlay with Custom Icons" , group = "Advanced Subjects")]
 public class PrefabToolbarWithCustomIcons : ToolbarOverlay
 {
     public PrefabToolbarWithCustomIcons() : base(PrefabToolbarOverlayWithCustomIcons.ToolbarElementID) {}

@@ -3,8 +3,7 @@ using UnityEditor.Overlays;
 using UnityEditor.Toolbars;
 using UnityEngine;
 
-[Overlay(typeof(SceneView), "Custom Toolbar Overlay")]
-
+[Overlay(typeof(SceneView), "Custom Toolbar Overlay", group = "Advanced Subjects")]
 public class CustomToolbarOverlay : ToolbarOverlay
 {
     public const string id = "ExampleToolbar/Button";
