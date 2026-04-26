@@ -4,8 +4,11 @@ using UnityEditor.Toolbars;
 using UnityEngine;
 
 [Overlay(typeof(SceneView), "Custom Toolbar Overlay")]
+
 public class CustomToolbarOverlay : ToolbarOverlay
 {
+    public const string id = "ExampleToolbar/Button";
+
     public CustomToolbarOverlay() : base("custom-toolbar/button1", "custom-toolbar/button2")
     {
     }
@@ -18,10 +21,7 @@ public class CustomButton1 : EditorToolbarButton
     {
         text = "Button 1";
         tooltip = "This is Button 1!";
-        clicked += () =>
-        {
-            Debug.Log("Button 1 clicked!");
-        };
+        clicked += () => { Debug.Log("Button 1 clicked!"); };
     }
 }
 
@@ -30,11 +30,8 @@ public class CustomButton2 : EditorToolbarButton
 {
     public CustomButton2()
     {
-        text = "Button 2"; 
+        text = "Button 2";
         tooltip = "This is Button 2!";
-        clicked += () =>
-        {
-            Debug.Log("Button 2 clicked!");
-        };
+        clicked += () => { Debug.Log("Button 2 clicked!"); };
     }
 }

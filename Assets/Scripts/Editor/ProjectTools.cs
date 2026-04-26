@@ -9,13 +9,13 @@ public class ProjectTools
     private const string SceneTwoPath = "Assets/Scenes/Scene 2.unity";
     
     [MenuItem("Tools/Load Scene 1 ^=")]
-    static void LoadSceneOne()
+    public static void LoadSceneOne()
     {
         LoadScene(SceneOnePath);
     }
     
     [MenuItem("Tools/Load Scene 2")]
-    static void LoadSceneTwo()
+    public static void LoadSceneTwo()
     {
         LoadScene(SceneTwoPath);
     }
