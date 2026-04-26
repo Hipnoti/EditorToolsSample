@@ -25,6 +25,6 @@ public class ItemsDatabase : ScriptableObject
         
         items = itemDataList.ToArray();
         
-     //   EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(this);
     }
 }

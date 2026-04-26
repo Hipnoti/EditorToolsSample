@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-//[CustomEditor(typeof(ItemsDatabase))]
+[CustomEditor(typeof(ItemsDatabase))]
 public class ItemsDatabaseEditor : Editor
 {
     public override void OnInspectorGUI()
