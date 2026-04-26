@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5687c29b6ec327e4284620ce3dd604e1, type: 3}
-  m_Name: SwordItem
+  m_Name: SwordItem 11212
   m_EditorClassIdentifier: 
   itemSprite: {fileID: 21300000, guid: 4496602a4a90a7a469041f73e12f2366, type: 3}
   rarity: 1

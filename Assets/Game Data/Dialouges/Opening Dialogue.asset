@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5822d4c77f60fd84584a58d2d05f1c68, type: 3}
-  m_Name: DialoguePartScriptable
+  m_Name: Opening Dialogue
   m_EditorClassIdentifier: 
   text: Hello there year 3 B
-  hasAudio: 1
+  hasAudio: 0
   audioClip: {fileID: 0}
   characterName: geralt
   sprite: {fileID: 0}

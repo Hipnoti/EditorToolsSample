@@ -20,12 +20,12 @@ public class ItemDataEditor : Editor
         serializedObject.Update();
         GUILayout.Label("Item Data Editor", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(itemSprite);
-        EditorGUILayout.PropertyField(itemRarity);
+        //EditorGUILayout.PropertyField(itemRarity);
         
-        // Color defaultColor = GUI.color;
-        // GUI.color = GetRarityColor((ItemRarity)itemRarity.enumValueIndex);
-        // EditorGUILayout.PropertyField(itemRarity);
-        // GUI.color = defaultColor;
+     //   Color defaultColor = GUI.color;
+  //      GUI.color = GetRarityColor((ItemRarity)itemRarity.enumValueIndex);
+        EditorGUILayout.PropertyField(itemRarity);
+       // GUI.color = defaultColor;
 
         serializedObject.ApplyModifiedProperties();
         

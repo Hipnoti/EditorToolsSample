@@ -7,7 +7,7 @@ public class ItemsDatabase : ScriptableObject
 {
     public ItemData[] items;
 
-    //[ContextMenu("Update Items Database")]
+    [ContextMenu("Update Items Database")]
     public void UpdateItemsDatabase()
     {
         GUID[] guids = AssetDatabase.FindAssetGUIDs("t:ItemData");
@@ -25,6 +25,6 @@ public class ItemsDatabase : ScriptableObject
         
         items = itemDataList.ToArray();
         
-        EditorUtility.SetDirty(this);
+     //   EditorUtility.SetDirty(this);
     }
 }
