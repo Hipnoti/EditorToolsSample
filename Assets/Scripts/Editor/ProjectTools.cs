@@ -8,7 +8,7 @@ public class ProjectTools
     private const string SceneOnePath = "Assets/Scenes/Scene 1.unity";
     private const string SceneTwoPath = "Assets/Scenes/Scene 2.unity";
     
-    [MenuItem("Tools/Load Scene 1")]
+    [MenuItem("Tools/Load Scene 1 ^=")]
     static void LoadSceneOne()
     {
         LoadScene(SceneOnePath);
