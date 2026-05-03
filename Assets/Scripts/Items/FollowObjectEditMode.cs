@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-[ExecuteInEditMode]
+[ExecuteAlways]
 public class FollowObjectEditMode : MonoBehaviour
 {
     [SerializeField] private Transform targetTransform;
