@@ -33,7 +33,7 @@ public class BuildPipeLineExtension
                 var scenePath = scene.path;
                 Scene currentScene = EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Single);
     
-                Camera[] cameras = GameObject.FindObjectsOfType<Camera>();
+                Camera[] cameras = GameObject.FindObjectsByType<Camera>();
                 int activeCameras = 0;
     
                 foreach (var cam in cameras)
