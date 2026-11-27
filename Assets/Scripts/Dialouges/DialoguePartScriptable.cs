@@ -8,6 +8,7 @@ public class DialoguePartScriptable : ScriptableObject
     public bool hasAudio;
     public AudioClip audioClip;
     
+    [Tooltip("The name of the character speaking this dialogue part.")]
     public string characterName;
     public Texture2D sprite;
     

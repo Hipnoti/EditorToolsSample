@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5822d4c77f60fd84584a58d2d05f1c68, type: 3}
   m_Name: DialoguePartScriptable
   m_EditorClassIdentifier: 
-  text: Hello there year 3 B
+  text: Hello there year 3 A
   hasAudio: 1
   audioClip: {fileID: 0}
   characterName: geralt
